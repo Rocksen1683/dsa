@@ -27,7 +27,7 @@ class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         #use a Union find data structure to check connectivity in O(1)
         n = len(isConnected)
-        uf = UnionFind(n)
+        uf = UnionFind(n) 
         numOfComponents = n 
 
         for i in range(n):
